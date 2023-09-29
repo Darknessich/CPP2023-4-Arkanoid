@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{62486914-2bbf-4edb-b549-ca43e8a8b57d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Physics">
+      <UniqueIdentifier>{dad2ddf3-105f-4185-8083-67613c34a851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
+      <UniqueIdentifier>{eead8aa7-59dd-4ec2-8fb2-743ed869b9e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects">
+      <UniqueIdentifier>{40752d96-0df9-476c-80dc-b32112e635ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Bricks">
+      <UniqueIdentifier>{159ee875-f973-4d2a-bf2e-1785d1873eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Bonus">
+      <UniqueIdentifier>{eed08610-dbb5-4c16-bc1e-17ccf4148669}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Physics\Points.cpp">
+      <Filter>Engine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Physics\Hitbox.cpp">
+      <Filter>Engine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Physics\Colliding.cpp">
+      <Filter>Engine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Room.cpp">
+      <Filter>GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Ball.cpp">
+      <Filter>GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GameObjects\Carriage.cpp">
+      <Filter>GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bricks\IndestructibleBrick.cpp">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bricks\MovingBrick.cpp">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bricks\Board.cpp">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bricks\Brick.cpp">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bricks\AccelBrick.cpp">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\Bonus.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\IncreaseSize.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\Effect.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\Downsizing.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\StickyCarriage.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\Slowdown.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\Accelerate.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bricks\SaveBrick.cpp">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\SaveBonus.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Bonus\AddBall.cpp">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSettings.h" />
+    <ClCompile Include="GameSettings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Graphics\Rendered.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Physics\Points.h">
+      <Filter>Engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Physics\Hitbox.h">
+      <Filter>Engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Physics\Colliding.h">
+      <Filter>Engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Moving.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Room.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Ball.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h" />
+    <ClInclude Include="GameObjects\Carriage.h">
+      <Filter>GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bricks\Brick.h">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bricks\IndestructibleBrick.h">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bricks\MovingBrick.h">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bricks\Board.h">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bricks\AccelBrick.h">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\Bonus.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\Effect.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\IncreaseSize.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\Downsizing.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\StickyCarriage.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\Accelerate.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\Slowdown.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bricks\SaveBrick.h">
+      <Filter>GameObjects\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\SaveBonus.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Bonus\AddBall.h">
+      <Filter>GameObjects\Bonus</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
