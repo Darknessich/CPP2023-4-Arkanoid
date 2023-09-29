@@ -2,6 +2,7 @@
 #include "AccelBrick.h"
 #include "IndestructibleBrick.h"
 #include "MovingBrick.h"
+#include "../../GameSettings.h"
 #include "../Bonus/Bonus.h"
 #include "../Bonus/IncreaseSize.h"
 #include "../Bonus/Downsizing.h"
@@ -47,16 +48,16 @@ Board::Board(PointF start, int wb, int hb, float brickW, float brickH, char cons
       case 'n': // None
         break;
       case 'b': // Brick
-        bricks.push_back(new Brick(line + PointF(j * brickW, 0.0f), brickW, brickH, 1, getBonus(bonusMap[i][j])));
+        bricks.push_back(new Brick(line + PointF(j * brickW, 0.0f), brickW, brickH, GS::GO::Bricks::Brick::points, getBonus(bonusMap[i][j])));
         break;
       case 'a': // AccelBrick
-        bricks.push_back(new AccelBrick(line + PointF(j * brickW, 0.0f), brickW, brickH, 1, getBonus(bonusMap[i][j]), 1.1f));
+        bricks.push_back(new AccelBrick(line + PointF(j * brickW, 0.0f), brickW, brickH, GS::GO::Bricks::Accel::points, getBonus(bonusMap[i][j]), GS::GO::Bricks::Accel::accel));
         break;
       case 'i': // IndestructibleBrick
-        bricks.push_back(new IndestructibleBrick(line + PointF(j * brickW, 0.0f), brickW, brickH, 1, getBonus(bonusMap[i][j])));
+        bricks.push_back(new IndestructibleBrick(line + PointF(j * brickW, 0.0f), brickW, brickH, GS::GO::Bricks::Indestruct::points, getBonus(bonusMap[i][j])));
         break;
       case 'm': // MovingBrick
-        movBricks.push_back(new MovingBrick(line + PointF(j * brickW, 0.0f), brickW, brickH, 100, getBonus(bonusMap[i][j]), { -100.0f, 0.0f }));
+        movBricks.push_back(new MovingBrick(line + PointF(j * brickW, 0.0f), brickW, brickH, GS::GO::Bricks::Moving::points, getBonus(bonusMap[i][j]), { GS::GO::Bricks::Moving::speed, 0.0f }));
         break;
       }
     }

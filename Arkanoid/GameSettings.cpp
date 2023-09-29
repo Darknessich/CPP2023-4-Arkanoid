@@ -66,11 +66,11 @@ int     GS::GO::Board::height       = 5;
   // 's': save
   // 'b': addball
 
-  static char bsl1[] = "ndalasain";
+  static char bsl1[] = "ndalbsain";
   static char bsl2[] = "nsdstsisn";
   static char bsl3[] = "ntlisdltn";
   static char bsl4[] = "nsistsdsn";
-  static char bsl5[] = "nialasadn";
+  static char bsl5[] = "niblbsbdn";
   char * const GS::GO::Board::bonusMp[] = { bsl1, bsl2, bsl3, bsl4, bsl5 };
 
 // ***************************
@@ -81,7 +81,8 @@ float GS::GO::Bricks::width         = .2f * x;
 float GS::GO::Bricks::height        = .06f * x;
 
 int GS::GO::Bricks::Accel::points       = 1;
-float GS::GO::Bricks::Accel::color3f[]  = { .167f, .255f, .435f };
+float GS::GO::Bricks::Accel::accel      = 1.2;
+float GS::GO::Bricks::Accel::color3f[]  = { 0.318f, 0.11f, 0.11f };
 
 int GS::GO::Bricks::Brick::points       = 1;
 float GS::GO::Bricks::Brick::color3f[]  = { 0.647f, 0.51f, 0.243f };
@@ -90,6 +91,7 @@ int GS::GO::Bricks::Indestruct::points  = 1;
 float GS::GO::Bricks::Indestruct::color3f[] = { .235f, .267f, .337f };
 
 int GS::GO::Bricks::Moving::points      = 3;
+float GS::GO::Bricks::Moving::speed     = - 0.3 * x;
 float GS::GO::Bricks::Moving::color3f[] = { 0.235f, 0.173f, 0.447f };
 
 int GS::GO::Bricks::Save::points        = 0;

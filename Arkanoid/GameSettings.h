@@ -61,6 +61,7 @@ struct GS { // Game Settings
 
       struct Accel {
         static int points;
+        static float accel;
         static float color3f[];
       };
 
@@ -71,6 +72,7 @@ struct GS { // Game Settings
 
       struct Moving {
         static int points;
+        static float speed;
         static float color3f[];
       };
 
